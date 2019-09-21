@@ -1,0 +1,128 @@
+
+/*styling for navbar*/
+
+.name{
+display:block;
+padding:0;
+margin: 0;
+width:200px;
+
+}
+
+
+.first-introduction{
+  display: flex;
+  flex: 1;
+  flex-wrap:unwrap;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  top: 10%;
+}
+
+.remove-symbols {
+  list-style:none;
+  padding:20px 0 0 0;
+  display: block;
+  overflow: auto;
+   
+
+}
+
+
+
+
+.body-without-nav {
+  
+  color: black;
+  margin-left: 185px;
+  
+}
+
+.top-left  {
+  position: absolute;
+  top: 8px;
+  margin-left: 25%;
+  font-size: 40px;
+  color: #088795;
+  width: 25%;
+  
+
+}
+
+
+img.main-photo{
+
+
+ width: 100%;
+ margin-left: 1%;
+  
+
+}
+
+.paras
+{
+
+  width: 100%;
+  margin-left: 1%;
+
+}
+
+.logo{
+
+  max-height: 50px;
+  max-width: 50px;
+
+}
+
+.project-image {
+position: relative;
+ width: 50%;
+ height: 50%;
+  }
+
+  .skills-photo{
+
+   max-width: 45px;
+   max-height: 45px;
+
+  }
+
+  .mongo {
+    max-width:  185px;
+    max-height: 185px;
+
+  }
+
+  .column {
+    float: left;
+    width: 15%;
+    padding: 25px;
+    height: 45px; /* Should be removed. Only for demonstration */
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+@media screen and (max-width: 900px) {
+  ul.remove-symbols {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+  @media screen and (max-width: 400px) {
+    ul.remove-symbols li a {
+      text-align: center;
+      float: none;
+    }
+  }
