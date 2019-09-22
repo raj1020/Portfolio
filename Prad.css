@@ -132,6 +132,8 @@ img.main-photo{
   background-color: #f1f1f1;
 }
 
+
+
 .container > div {
   margin: 10px;
   text-align: left;
@@ -225,6 +227,19 @@ position: relative;
     color: white;
     transform: rotateY(180deg);
   }
+
+.blogphoto {
+
+  width: 100%;
+  margin-left: 1%;
+
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width: 900px) {
