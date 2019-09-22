@@ -6,6 +6,9 @@ display:block;
 padding:0;
 margin: 0;
 width:200px;
+color: #088795;
+font-size: 22px;
+
 
 }
 
@@ -14,13 +17,14 @@ width:200px;
   display: flex;
   flex: 1;
   flex-wrap:unwrap;
-  width: 180px;
+  width: 185px;
   position: fixed;
   z-index: 1;
   margin: 0;
   padding: 0;
   height: 100%; 
   top: 10%;
+  color:#088795;
 }
 
 .remove-symbols {
@@ -28,17 +32,50 @@ width:200px;
   padding:20px 0 0 0;
   display: block;
   overflow: auto;
-   
-
+  font-size: 18px;
+  color:#088795;
+  
 }
 
+.focus {
+
+  color:#088795;
+}
+
+li:active span:active{
+  background-color: #4CAF50;
+}
+
+
+
+/* unvisited link */
+.remove-symbols:link {
+  color:#172D2C;
+}
+
+/* visited link */
+.remove-symbols:visited {
+  color: #088795;
+}
+
+/* mouse over link */
+.remove-symbols:hover {
+  color: #D0153B;
+  font-size: 150%;
+}
+
+/* selected link */
+.remove-symbols:active {
+  color: #5315D0;
+}
 
 
 
 .body-without-nav {
   
-  color: black;
-  margin-left: 185px;
+  color: #111112;
+  margin-left: 195px;
+  font-family: 'Roboto Slab', serif;
   
 }
 
@@ -76,6 +113,21 @@ img.main-photo{
   max-height: 50px;
   max-width: 50px;
 
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  background-color: #f1f1f1;
+}
+
+.container > div {
+  margin: 10px;
+  text-align: left;
+  font-size: 18px;
+  padding: 10px 0 10px 0;
 }
 
 .project-image {
