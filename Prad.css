@@ -64,6 +64,15 @@ li:active span:active{
   font-size: 150%;
 }
 
+.project>span:hover {
+
+  color: #D0153B;
+  font-size: 150%;
+
+}
+
+
+
 /* selected link */
 .remove-symbols:active {
   color: #5315D0;
@@ -132,8 +141,8 @@ img.main-photo{
 
 .project-image {
 position: relative;
- width: 50%;
- height: 50%;
+ max-width: 100%;
+ max-height: 100%;
   }
 
   .skills-photo{
@@ -163,13 +172,19 @@ position: relative;
   }
 
 
+  .project {
+
+      font-size: 20px;
+
+  }
 
 
 
   .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 900px;
+    height: 600px;
+    padding: 40px 0 0 0;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
