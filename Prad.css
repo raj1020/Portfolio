@@ -147,20 +147,20 @@ position: relative;
 
   .skills-photo{
 
-   max-width: 45px;
-   max-height: 45px;
+   width: 45px;
+   height: 45px;
 
   }
 
   .mongo {
-    max-width:  185px;
-    max-height: 185px;
+    width:  185px;
+    height: 45px;
 
   }
 
   .column {
     float: left;
-    width: 15%;
+    max-width: 110px;
     padding: 25px;
     height: 45px; /* Should be removed. Only for demonstration */
   }
@@ -169,6 +169,7 @@ position: relative;
     content: "";
     display: table;
     clear: both;
+    padding: 30px 0 30px 0;
   }
 
 
