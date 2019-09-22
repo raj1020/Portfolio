@@ -37,10 +37,7 @@ font-size: 22px;
   
 }
 
-.focus {
 
-  color:#088795;
-}
 
 li:active span:active{
   background-color: #4CAF50;
@@ -62,6 +59,11 @@ li:active span:active{
 .remove-symbols:hover {
   color: #D0153B;
   font-size: 150%;
+}
+
+.focus {
+
+  color:#088795;
 }
 
 .project>span:hover {
@@ -88,6 +90,7 @@ li:active span:active{
   
 }
 
+/*Styling for text on the image of homepage*/
 .top-left  {
   position: absolute;
   top: 8px;
@@ -103,7 +106,7 @@ li:active span:active{
 img.main-photo{
 
 
- width: 100%;
+ max-width: 100%;
  margin-left: 1%;
   
 
@@ -132,14 +135,13 @@ img.main-photo{
   background-color: #f1f1f1;
 }
 
-
-
 .container > div {
   margin: 10px;
   text-align: left;
   font-size: 18px;
   padding: 10px 0 10px 0;
 }
+
 
 .project-image {
 position: relative;
@@ -185,8 +187,8 @@ position: relative;
 
   .flip-card {
     background-color: transparent;
-    width: 900px;
-    height: 600px;
+    width: 700px;
+    height: 500px;
     padding: 40px 0 0 0;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -242,17 +244,58 @@ position: relative;
 
 
 
-@media screen and (max-width: 900px) {
-  ul.remove-symbols {
+@media screen and (max-width: 700px) {
+  
+  .first-introduction {
     width: 100%;
     height: auto;
     position: relative;
+    
   }
+  .first-introduction li {float: left;}
+  div.body-without-nav {margin-left: 0;}
+
+  .top-left {
+
+    position: relative;
+    margin-left: 5%;
+    font-size: 22px;
+    color: #088795;
+    max-width: 25%;
+
+  }
+
+  .remove-symbols a {
+    margin-left: 10px;
+    margin-right: 20px;
+    
+  }
+
+
+  .flip-card {
+    
+    width: 400px;
+    height: 300px;
+   
+  }
+  
+
 }
 
   @media screen and (max-width: 400px) {
-    ul.remove-symbols li a {
+    .first-introduction li {
       text-align: center;
       float: none;
     }
+
+    .top-left {
+
+      position: relative;
+      margin-left: 5%;
+      font-size: 22px;
+      color: #088795;
+      max-width: 25%;
+
+    }
+
   }
