@@ -1,0 +1,245 @@
+
+/*styling for navbar*/
+
+.name{
+display:block;
+padding:0;
+margin: 0;
+width:200px;
+color: #088795;
+font-size: 22px;
+
+
+}
+
+
+.first-introduction{
+  display: flex;
+  flex: 1;
+  flex-wrap:unwrap;
+  width: 185px;
+  position: fixed;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  top: 10%;
+  color:#088795;
+  }
+
+.remove-symbols {
+  list-style:none;
+  padding:20px 0 0 0;
+  display: block;
+  overflow: auto;
+  font-size: 18px;
+  color:#088795;
+  
+}
+
+.focus {
+
+  color:#088795;
+}
+
+li:active span:active{
+  background-color: #4CAF50;
+}
+
+
+
+/* unvisited link */
+.remove-symbols:link {
+  color:#172D2C;
+}
+
+/* visited link */
+.remove-symbols:visited {
+  color: #088795;
+}
+
+/* mouse over link */
+.remove-symbols:hover {
+  color: #D0153B;
+  font-size: 150%;
+}
+
+.project>span:hover {
+
+  color: #D0153B;
+  font-size: 150%;
+
+}
+
+
+
+/* selected link */
+.remove-symbols:active {
+  color: #5315D0;
+}
+
+
+
+.body-without-nav {
+  
+  color: #111112;
+  margin-left: 195px;
+  font-family: 'Roboto Slab', serif;
+  
+}
+
+.top-left  {
+  position: absolute;
+  top: 8px;
+  margin-left: 25%;
+  font-size: 40px;
+  color: #088795;
+  width: 25%;
+  
+
+}
+
+
+img.main-photo{
+
+
+ width: 100%;
+ margin-left: 1%;
+  
+
+}
+
+.paras
+{
+
+  width: 100%;
+  margin-left: 1%;
+
+}
+
+.logo{
+
+  max-height: 50px;
+  max-width: 50px;
+
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  background-color: #f1f1f1;
+}
+
+
+
+.container > div {
+  margin: 10px;
+  text-align: left;
+  font-size: 18px;
+  padding: 10px 0 10px 0;
+}
+
+.project-image {
+position: relative;
+ max-width: 100%;
+ max-height: 100%;
+  }
+
+  .skills-photo{
+
+   width: 45px;
+   height: 45px;
+
+  }
+
+  .mongo {
+    width:  185px;
+    height: 45px;
+
+  }
+
+  .column {
+    float: left;
+    max-width: 110px;
+    padding: 25px;
+    height: 45px; /* Should be removed. Only for demonstration */
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 30px 0 30px 0;
+  }
+
+
+  .project {
+
+      font-size: 20px;
+
+  }
+
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 900px;
+    height: 600px;
+    padding: 40px 0 0 0;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+@media screen and (max-width: 900px) {
+  ul.remove-symbols {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+  @media screen and (max-width: 400px) {
+    ul.remove-symbols li a {
+      text-align: center;
+      float: none;
+    }
+  }
