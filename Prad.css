@@ -81,7 +81,7 @@ li:active span:active{
 }
 
 
-
+/*Styles for Main Body*/
 .body-without-nav {
   
   color: #111112;
@@ -120,6 +120,7 @@ img.main-photo{
 
 }
 
+/* Styling for logos in experience page */
 .logo{
 
   max-height: 50px;
@@ -127,7 +128,7 @@ img.main-photo{
 
 }
 
-
+/* Flex container and flex definition for divs */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -143,12 +144,8 @@ img.main-photo{
 }
 
 
-.project-image {
-position: relative;
- max-width: 100%;
- max-height: 100%;
-  }
 
+  /* for icons in skills page */
   .skills-photo{
 
    width: 45px;
@@ -156,17 +153,18 @@ position: relative;
 
   }
 
+
   .mongo {
     width:  185px;
     height: 45px;
 
   }
-
+/* for arranging icons and text in skills page */
   .column {
     float: left;
     max-width: 110px;
     padding: 25px;
-    height: 45px; /* Should be removed. Only for demonstration */
+    height: 45px; 
   }
 
   .row:after {
@@ -177,6 +175,13 @@ position: relative;
   }
 
 
+/* for images in the projects page */
+.project-image {
+  position: relative;
+   max-width: 100%;
+   max-height: 100%;
+    }
+/* For Description of project image */
   .project {
 
       font-size: 20px;
@@ -184,17 +189,17 @@ position: relative;
   }
 
 
-
+/* for flipping project image when hovered above it */ /*projects page */
   .flip-card {
     background-color: transparent;
     width: 700px;
     height: 500px;
     padding: 40px 0 0 0;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px; 
   }
   
-  /* This container is needed to position the front and back side */
+  /* This container is needed to position the front and back side */ /*projects page */
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -204,12 +209,12 @@ position: relative;
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+ 
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   
-  /* Position the front and back side */
+  /* Position the front and back side */ /*projects page */
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -217,19 +222,21 @@ position: relative;
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
+  /* Style the front side (fallback if image is missing) */ /*projects page */
   .flip-card-front {
     background-color: #bbb;
     color: black;
   }
   
-  /* Style the back side */
+  /* Style the back side */ /*projects page */
   .flip-card-back {
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
   }
 
+  
+/* for photos in the blog */
 .blogphoto {
 
   width: 100%;
@@ -242,43 +249,44 @@ position: relative;
 
 
 
-
+/* for making the website responsive */
 
 @media screen and (max-width: 700px) {
   
-  .first-introduction {
-    width: 100%;
-    height: auto;
-    position: relative;
-    
-  }
-  .first-introduction li {float: left;}
-  div.body-without-nav {margin-left: 0;}
+      .first-introduction {
+        width: 100%;
+        height: auto;
+        position: relative;
+        
+      }
+      .first-introduction li {float: left;}
+      div.body-without-nav {margin-left: 0;}
 
-  .top-left {
+      .top-left {
 
-    position: relative;
-    margin-left: 5%;
-    font-size: 22px;
-    color: #088795;
-    max-width: 25%;
+        position: relative;
+        margin-left: 5%;
+        font-size: 22px;
+        color: #088795;
+        max-width: 25%;
 
-  }
+      }
 
-  .remove-symbols a {
-    margin-left: 10px;
-    margin-right: 20px;
-    
-  }
+      .remove-symbols a {
+        margin-left: 10px;
+        margin-right: 20px;
+        
+      }
 
 
-  .flip-card {
-    
-    width: 400px;
-    height: 300px;
-   
-  }
-  
+
+      .flip-card {
+        
+        width: 400px;
+        height: 300px;
+      
+      }
+      
 
 }
 
